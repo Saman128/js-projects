@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js" defer></script>
+    <title>BOOKING Form</title>
+</head>
+<body>
+    <header class="header">
+       <form action="" >
+                                   <!-- ####################  logo pic  ################  -->
+        <div class="logo"></div>
+        <h1>Hotel Booking Registration Form</h1>
+                                           <!-- ####################  customer info  ################  -->
+     <div class="main">
+        <div class="one">
+            <label for="">Name:</label><br>
+            <input type="text" placeholder="enter your name" class="name"><br>
+            <label for="">Date:</label><br>
+            <input type="date" class="date" class="date1"><br>
+</div>
+<div class="two">
+<label for="">Total days:</label><br>
+<input type="number" class="date" onchange="set()"><br>
+<label for="">Total Persons:</label><br>
+<input type="number" class="date"><br>
+</div>
+     </div>
+     <h2 class="info">Room information</h2>
+                                       <!-- ####################  room info  ################  -->
+<div class="main">
+    <div>
+     <h2>Room Type:</h2>
+    <select class="room" onchange="set()">
+        
+        <option value="2500" >Delux room</option>
+        <option value="4000">Suite room</option>
+    </select>
+    </div>
+   
+                                    <!-- ####################  amenities info  ################  -->
+     <div>
+     <h2 class="h2">Amenities:</h2>
+     <select class="noom noom1" onchange="set()">
+  
+     <option value="1000" >AC</option>
+     <option value="300">Locker</option>
+    </select>
+    </div>
+</div>
+<h2 class="rate">Room Rate:</h2>
+<p class="p">Delux Room 2500/- &nbsp; &nbsp; &nbsp;  Suite Room 4000/-  &nbsp; &nbsp; &nbsp; AC 1000/-  &nbsp; &nbsp; &nbsp; Locker 300/-</p>
+
+                                     <!-- ####################  payment info  ################  -->
+ <label for="" >Advance Payment:</label><br>
+ <input type="number" class="advance " placeholder="500/-" onchange="set()"><br>
+ <label for="" >Additional charge:</label><br>
+<input type="number" class="advance advance1" onchange="set()" ><br>
+<p class="extra">-Upto 2 people: no change in cost | -per day cost for extra person: 1000/-</p>
+ <div class="main">
+<div class="amount">
+    <label for="" >Balance Amount:</label><br>
+    <div class="balance balance1"></div><br>
+</div>
+<div class="bill">
+    <label for="" >Total Bill:</label><br>
+    <div class="balance balance2"></div><br>
+</div>
+</div>
+
+
+
+<input type="Submit" value="submit" class="btn">
+       </div>
+    </header>
+</body>
+</html>
