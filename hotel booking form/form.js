@@ -4,7 +4,7 @@ function set(){
 
     var D=document.querySelector(".value");
     var datevalue=D.value;
-    console.log(datevalue);
+    // console.log(datevalue);
 
     var advance1=document.querySelector(".advance1");
     var adv1=advance1.value;
