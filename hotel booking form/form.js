@@ -1,6 +1,11 @@
 function set(){
     var x=document.querySelector(".room");
     var y=document.querySelector(".noom");
+
+    var D=document.querySelector(".value");
+    var datevalue=D.value;
+    console.log(datevalue);
+
     var advance1=document.querySelector(".advance1");
     var adv1=advance1.value;
     var plus=1000*adv1;
@@ -8,10 +13,9 @@ function set(){
     var adv=advance.value;
     var value1=x.value;
     var value2=y.value;
-    var SUM=parseInt(value1)+parseInt(value2)+plus;
+    var SUM=((parseInt(value1)+parseInt(value2))*datevalue)+plus;
     var sub=adv;
     var rem=SUM-sub;
-    console.log(rem);
     var disp=document.querySelector(".balance2");
     var disp1=document.querySelector(".balance");
     disp.innerHTML=SUM;
