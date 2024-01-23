@@ -1,2 +1,2 @@
-# Digitalbhem
-course by digital bhem
+# js-projects
+small projects of javascripts.
